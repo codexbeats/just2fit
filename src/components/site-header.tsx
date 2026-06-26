@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import logoImg from "@/assets/hulk-gym-logo.png";
+import { Logo } from "./logo";
 
 const NAV_LINKS = [
   { label: "About", href: "/#about" },
@@ -38,13 +38,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <a href="/" className="flex min-w-0 items-center gap-3">
-          <img
-            src={logoImg}
-            alt="Just 2 Fit"
-            width={180}
-            height={120}
-            className="h-12 w-auto sm:h-14 lg:h-16"
-          />
+          <Logo className="text-3xl sm:text-4xl lg:text-[2.5rem]" />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">

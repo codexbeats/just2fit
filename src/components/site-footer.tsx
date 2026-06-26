@@ -1,6 +1,6 @@
 import { Phone, MapPin, Navigation, Instagram, Facebook, MessageCircle } from "lucide-react";
 import { FadeUp } from "./fade-up";
-import logoImg from "@/assets/hulk-gym-logo.png";
+import { Logo } from "./logo";
 
 const ADDRESS = "02, Desh Bandhu Gupta Road, Motia Khan, Paharganj, New Delhi, Delhi 110055";
 const MAPS_URL = "https://share.google/MyyTZzOnfdb2UT6gP";
@@ -96,13 +96,7 @@ export function SiteFooter() {
 
         <div className="mt-16 flex flex-col gap-4 border-t border-white/5 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <a href="/" aria-label="Just 2 Fit home">
-            <img
-              src={logoImg}
-              alt="Just 2 Fit"
-              width={180}
-              height={120}
-              className="h-10 w-auto sm:h-12"
-            />
+            <Logo className="text-2xl sm:text-3xl" />
           </a>
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} Just 2 Fit. All rights reserved.
