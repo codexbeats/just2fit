@@ -2,11 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { HeroSection } from "@/components/hero-section";
 import { FeaturesSection } from "@/components/features-section";
-import { ServicesSection } from "@/components/services-section";
-import { TimingsSection } from "@/components/timings-section";
-import { BenefitsSection } from "@/components/benefits-section";
 import { ReviewsSection } from "@/components/reviews-section";
-import { MapSection } from "@/components/map-section";
 import { SiteFooter } from "@/components/site-footer";
 
 export const Route = createFileRoute("/")({
@@ -37,11 +33,7 @@ function Index() {
       <main>
         <HeroSection />
         <FeaturesSection />
-        <ServicesSection />
-        <TimingsSection />
-        <BenefitsSection />
         <ReviewsSection />
-        <MapSection />
       </main>
       <SiteFooter />
     </div>

@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { Logo } from "./logo";
 
 const NAV_LINKS = [
-  { label: "About", href: "/#about" },
-  { label: "Timings", href: "/#timings" },
-  { label: "Reviews", href: "/#reviews" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Home", href: "/" },
+  { label: "Facilities", href: "/facilities" },
+  { label: "Contact & Info", href: "/contact" },
 ];
 
 export function SiteHeader() {
@@ -37,26 +37,26 @@ export function SiteHeader() {
       }`}
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
-        <a href="/" className="flex min-w-0 items-center gap-3">
+        <Link to="/" className="flex min-w-0 items-center gap-3">
           <Logo className="text-3xl sm:text-4xl lg:text-[2.5rem]" />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              to={link.href}
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary [&.active]:text-primary"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="/query"
+          <Link
+            to="/query"
             className="btn-glow btn-glow-hover inline-flex items-center rounded-full bg-primary px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-primary-foreground"
           >
             Join Now
-          </a>
+          </Link>
         </nav>
 
         <button
@@ -82,22 +82,22 @@ export function SiteHeader() {
           >
             <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-6">
               {NAV_LINKS.map((link) => (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  to={link.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-md px-3 py-3 text-base font-medium text-foreground transition-colors hover:bg-surface hover:text-primary"
+                  className="rounded-md px-3 py-3 text-base font-medium text-foreground transition-colors hover:bg-surface hover:text-primary [&.active]:text-primary [&.active]:bg-surface"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="/query"
+              <Link
+                to="/query"
                 onClick={() => setOpen(false)}
                 className="btn-glow mt-2 inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-bold uppercase tracking-wider text-primary-foreground"
               >
                 Join Now
-              </a>
+              </Link>
             </nav>
           </motion.div>
         )}
