@@ -45,7 +45,7 @@ export function HeroSection() {
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary backdrop-blur"
         >
           <Star className="h-3.5 w-3.5 fill-primary" />
-          5.0 Google Rating · 61 Reviews
+          4.8 Stars and (519) Ratings on Google
         </motion.div>
 
         <motion.h1
@@ -102,8 +102,8 @@ export function HeroSection() {
           className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-white/10 pt-6 sm:mt-20"
         >
           {[
-            { k: "5.0★", v: "Rating" },
-            { k: "61+", v: "Reviews" },
+            { k: "4.8★", v: "Rating" },
+            { k: "519+", v: "Ratings" },
             { k: "6AM–12AM", v: "Mon–Sat*" },
           ].map((s) => (
             <div key={s.v}>
