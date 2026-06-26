@@ -105,7 +105,7 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="mt-8 grid max-w-xs grid-cols-3 gap-4 border-t border-white/10 pt-5 sm:max-w-md sm:gap-6 sm:mt-12"
+          className="mx-auto mt-8 grid w-full max-w-xs grid-cols-3 gap-4 border-t border-white/10 pt-5 text-center sm:mx-0 sm:max-w-md sm:gap-6 sm:mt-12 sm:text-left"
         >
           {[
             { k: "4.8★", v: "Rating" },
