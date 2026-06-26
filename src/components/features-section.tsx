@@ -5,58 +5,52 @@ const FEATURES = [
   {
     icon: Dumbbell,
     title: "No Waiting for Machines",
-    body: "Our dual-equipment setup ensures you never have to waste time waiting for a machine or bench to clear up during peak hours.",
+    body: "Our dual-equipment setup ensures you never wait. Two of every major machine means zero downtime even at peak hours.",
   },
   {
     icon: Flame,
     title: "Delhi's Best Rooftop CrossFit",
-    body: "Enjoy fresh-air functional training, tire flips, and high-intensity circuits on our dedicated 3,000 sq. feet open rooftop.",
+    body: "Fresh-air functional training, tire flips, and HIIT circuits on our dedicated 3,000 sq. ft. open rooftop — Delhi's largest.",
   },
   {
     icon: Users,
-    title: "Uncompromised Safety & Respect",
-    body: "We take pride in maintaining a highly respectful crowd and a completely safe, welcoming environment for female fitness enthusiasts.",
+    title: "Safety & Respect First",
+    body: "A highly respectful environment and a completely safe, welcoming space for female fitness enthusiasts. Zero tolerance policy.",
   },
   {
     icon: Star,
     title: "Premium Comfort",
-    body: "Fully centralized air conditioning, spotless shower facilities, clean restrooms, and ample hassle-free parking.",
+    body: "Centralized AC, spotless shower facilities, clean restrooms, locker rooms, and ample hassle-free parking included.",
   },
 ];
 
 export function FeaturesSection() {
   return (
-    <section
-      id="about"
-      className="relative border-t border-white/5 bg-transparent py-12 sm:py-24"
-    >
+    <section id="about" className="relative border-t border-white/5 bg-transparent py-10 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeUp>
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary sm:text-xs">
             About Us
           </p>
-          <h2 className="mt-3 max-w-2xl font-display text-2xl leading-none sm:text-5xl">
+          <h2 className="mt-2 font-display text-2xl leading-none sm:text-4xl lg:text-5xl">
             Why Choose JUST 2 FIT?
           </h2>
-          <p className="mt-6 max-w-3xl text-base text-muted-foreground sm:text-lg">
-            At JUST 2 FIT, we believe that great results start with the right
-            environment. Conveniently located directly opposite the Paharganj
-            Police Station, our gym offers a clean, energetic, and welcoming
-            atmosphere for everyone—from beginners to professional athletes.
+          <p className="mt-3 max-w-2xl text-xs leading-relaxed text-muted-foreground sm:text-sm">
+            Located directly opposite the Paharganj Police Station, our gym
+            offers a clean, energetic, and welcoming atmosphere — from absolute
+            beginners to seasoned athletes.
           </p>
         </FadeUp>
 
-        <div className="mt-10 sm:mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-5">
           {FEATURES.map((f, i) => (
             <FadeUp key={f.title} delay={i * 0.1}>
-              <div className="group h-full rounded-2xl border border-white/8 bg-surface/60 p-5 sm:p-7 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-[var(--shadow-glow-sm)]">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                  <f.icon className="h-6 w-6" />
+              <div className="group h-full rounded-xl border border-white/8 bg-surface/60 p-4 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_0_12px_rgba(255,215,0,0.15)] sm:p-6">
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground sm:h-12 sm:w-12">
+                  <f.icon className="h-5 w-5" />
                 </div>
-                <h3 className="mt-5 font-display text-xl sm:text-2xl tracking-wide">
-                  {f.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <h3 className="mt-4 font-display text-lg tracking-wide sm:text-xl">{f.title}</h3>
+                <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">
                   {f.body}
                 </p>
               </div>
