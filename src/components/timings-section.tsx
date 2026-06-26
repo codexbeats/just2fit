@@ -21,9 +21,9 @@ export function TimingsSection() {
     <section id="timings" className="relative border-t border-white/5 bg-transparent  py-16 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeUp>
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Schedule</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Plan Your Visit</p>
           <h2 className="mt-3 max-w-2xl font-display text-3xl leading-none sm:text-6xl">
-            Train when it works for you.
+            Working Hours
           </h2>
           <p className="mt-4 max-w-xl text-muted-foreground">
             Two daily shifts so early risers and after-work warriors can both get their reps in.

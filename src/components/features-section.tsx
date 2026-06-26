@@ -29,10 +29,13 @@ export function FeaturesSection() {
     <section id="about" className="relative border-t border-white/5 bg-transparent  py-16 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeUp>
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Why Choose JUST 2 FIT?</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">About Us</p>
           <h2 className="mt-3 max-w-2xl font-display text-3xl leading-none sm:text-6xl">
-            Built for those who refuse to settle.
+            Why Choose JUST 2 FIT?
           </h2>
+          <p className="mt-6 max-w-3xl text-base text-muted-foreground sm:text-lg">
+            At JUST 2 FIT, we believe that great results start with the right environment. Conveniently located directly opposite the Paharganj Police Station, our gym offers a clean, energetic, and welcoming atmosphere for everyone—from beginners to professional athletes.
+          </p>
         </FadeUp>
 
         <div className="mt-10 sm:mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-2">

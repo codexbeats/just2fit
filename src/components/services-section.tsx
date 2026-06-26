@@ -54,14 +54,10 @@ export function ServicesSection() {
     <section id="services" className="relative border-t border-white/5 bg-transparent  py-16 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeUp>
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Services</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Facilities & Amenities</p>
           <h2 className="mt-3 max-w-3xl font-display text-3xl leading-none sm:text-6xl">
-            Every way to train, under one roof.
+            Designed for Peak Performance
           </h2>
-          <p className="mt-4 max-w-xl text-muted-foreground">
-            From raw iron to recovery — pick your path. Every program is led by
-            certified coaches who train alongside you.
-          </p>
         </FadeUp>
 
         <div className="mt-10 sm:mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[14rem]">

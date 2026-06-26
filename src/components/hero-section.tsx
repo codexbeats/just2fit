@@ -60,14 +60,19 @@ export function HeroSection() {
           <span className="text-white text-[2rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] mb-2 sm:mb-4 lg:mb-5 ml-[-0.5rem] drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">GYM</span>
         </motion.h1>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg"
+          className="mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg space-y-4"
         >
-          Welcome to Paharganj’s premier fitness destination. Spanning a premium facility with a massive 3,000 sq. feet open rooftop CrossFit arena, JUST 2 FIT GYM combines elite equipment, certified trainers, and a motivating community to help you crush your health goals.
-        </motion.p>
+          <p>
+            Welcome to Paharganj's premier fitness destination. Featuring a premium fitness facility with a massive <strong className="text-white">3,000 sq. ft. open rooftop CrossFit arena</strong>, JUST 2 FIT GYM combines world-class equipment, certified trainers, and a motivating community to help you achieve your fitness goals.
+          </p>
+          <p>
+            Whether you want to build muscle, lose weight, improve endurance, or increase functional strength, we provide the perfect environment to transform your body and mind.
+          </p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
