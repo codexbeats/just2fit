@@ -42,7 +42,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary backdrop-blur"
+          className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-[0.65rem] sm:text-xs font-semibold uppercase tracking-widest text-primary backdrop-blur"
         >
           <Star className="h-3.5 w-3.5 fill-primary" />
           4.8 Stars and (519) Ratings on Google
@@ -54,16 +54,16 @@ export function HeroSection() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-display flex flex-wrap items-baseline justify-start uppercase tracking-tighter transform -skew-x-12 mb-2 sm:mb-4"
         >
-          <span className="text-primary font-black text-5xl sm:text-7xl md:text-8xl lg:text-[8rem] drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]" style={{ WebkitTextStroke: '1px rgba(255,215,0,0.3)' }}>JUST</span>
-          <span className="text-white font-black text-6xl sm:text-[5.5rem] md:text-[7rem] lg:text-[9rem] mx-3 sm:mx-5 drop-shadow-[0_0_20px_rgba(255,255,255,0.5)]" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>2</span>
-          <span className="text-[#FF0000] font-black text-5xl sm:text-7xl md:text-8xl lg:text-[8rem] drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]" style={{ WebkitTextStroke: '1px rgba(255,0,0,0.5)' }}>FIT</span>
+          <span className="text-primary font-black text-4xl sm:text-6xl md:text-8xl lg:text-[8rem] drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]" style={{ WebkitTextStroke: '1px rgba(255,215,0,0.3)' }}>JUST</span>
+          <span className="text-white font-black text-5xl sm:text-7xl md:text-[7rem] lg:text-[9rem] mx-2 sm:mx-5 drop-shadow-[0_0_20px_rgba(255,255,255,0.5)]" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>2</span>
+          <span className="text-[#FF0000] font-black text-4xl sm:text-6xl md:text-8xl lg:text-[8rem] drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]" style={{ WebkitTextStroke: '1px rgba(255,0,0,0.5)' }}>FIT</span>
         </motion.h1>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg space-y-4"
+          className="mt-6 max-w-2xl text-sm text-muted-foreground sm:text-lg space-y-4"
         >
           <p>
             Welcome to Paharganj's premier fitness destination. Featuring a premium fitness facility with a massive <strong className="text-white">3,000 sq. ft. open rooftop CrossFit arena</strong>, JUST 2 FIT GYM combines world-class equipment, certified trainers, and a motivating community to help you achieve your fitness goals.
@@ -81,14 +81,14 @@ export function HeroSection() {
         >
           <a
             href="#contact"
-            className="btn-glow btn-glow-hover group inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3 sm:py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground"
+            className="btn-glow btn-glow-hover group inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 sm:px-7 sm:py-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-primary-foreground"
           >
             Book a Free Trial Session
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
             href="tel:+919990318990"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/50 bg-transparent px-7 py-3 sm:py-4 text-sm font-bold uppercase tracking-wider text-foreground transition-all hover:border-primary hover:bg-primary/10 hover:text-primary"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/50 bg-transparent px-5 py-2.5 sm:px-7 sm:py-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-foreground transition-all hover:border-primary hover:bg-primary/10 hover:text-primary"
           >
             <Phone className="h-4 w-4" />
             Call Now
@@ -107,8 +107,8 @@ export function HeroSection() {
             { k: "6AM–12AM", v: "Mon–Sat*" },
           ].map((s) => (
             <div key={s.v}>
-              <div className="font-display text-2xl text-primary sm:text-3xl">{s.k}</div>
-              <div className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">{s.v}</div>
+              <div className="font-display text-xl text-primary sm:text-3xl">{s.k}</div>
+              <div className="mt-1 text-[0.65rem] sm:text-xs uppercase tracking-wider text-muted-foreground">{s.v}</div>
             </div>
           ))}
         </motion.div>
