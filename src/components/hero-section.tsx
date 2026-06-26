@@ -52,11 +52,12 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-display text-[3.25rem] leading-[0.92] tracking-tight sm:text-7xl md:text-8xl lg:text-[9rem]"
+          className="font-display flex flex-wrap items-end justify-start gap-x-2 sm:gap-x-4 leading-[0.85] tracking-tighter"
         >
-          ELEVATE YOUR
-          <br />
-          <span className="text-primary text-glow">FITNESS.</span>
+          <span className="text-primary text-[4.5rem] sm:text-[7rem] md:text-[9rem] lg:text-[11rem] text-glow drop-shadow-[0_0_15px_rgba(255,215,0,0.4)]">JUST</span>
+          <span className="text-white text-[4.5rem] sm:text-[7rem] md:text-[9rem] lg:text-[11rem] drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">2</span>
+          <span className="text-[#FF0000] text-[4.5rem] sm:text-[7rem] md:text-[9rem] lg:text-[11rem] drop-shadow-[0_0_15px_rgba(255,0,0,0.4)]">FIT</span>
+          <span className="text-white text-[2rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] mb-2 sm:mb-4 lg:mb-5 ml-[-0.5rem] drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">GYM</span>
         </motion.h1>
 
         <motion.p
