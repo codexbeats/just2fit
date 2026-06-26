@@ -52,12 +52,11 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-display flex flex-wrap items-end justify-start gap-x-2 sm:gap-x-4 leading-[0.85] tracking-tighter"
+          className="font-display flex flex-wrap items-baseline justify-start uppercase tracking-tighter transform -skew-x-12 mb-2 sm:mb-4"
         >
-          <span className="text-primary text-[4.5rem] sm:text-[7rem] md:text-[9rem] lg:text-[11rem] text-glow drop-shadow-[0_0_15px_rgba(255,215,0,0.4)]">JUST</span>
-          <span className="text-white text-[4.5rem] sm:text-[7rem] md:text-[9rem] lg:text-[11rem] drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">2</span>
-          <span className="text-[#FF0000] text-[4.5rem] sm:text-[7rem] md:text-[9rem] lg:text-[11rem] drop-shadow-[0_0_15px_rgba(255,0,0,0.4)]">FIT</span>
-          <span className="text-white text-[2rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] mb-2 sm:mb-4 lg:mb-5 ml-[-0.5rem] drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">GYM</span>
+          <span className="text-primary font-black text-5xl sm:text-7xl md:text-8xl lg:text-[8rem] drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]" style={{ WebkitTextStroke: '1px rgba(255,215,0,0.3)' }}>JUST</span>
+          <span className="text-white font-black text-6xl sm:text-[5.5rem] md:text-[7rem] lg:text-[9rem] mx-3 sm:mx-5 drop-shadow-[0_0_20px_rgba(255,255,255,0.5)]" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>2</span>
+          <span className="text-[#FF0000] font-black text-5xl sm:text-7xl md:text-8xl lg:text-[8rem] drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]" style={{ WebkitTextStroke: '1px rgba(255,0,0,0.5)' }}>FIT</span>
         </motion.h1>
 
         <motion.div
