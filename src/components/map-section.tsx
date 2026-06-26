@@ -1,3 +1,4 @@
+import { MapPin } from "lucide-react";
 import { FadeUp } from "./fade-up";
 
 export function MapSection() {
@@ -17,7 +18,18 @@ export function MapSection() {
         </FadeUp>
 
         <FadeUp delay={0.1}>
-          <div className="relative w-full overflow-hidden rounded-2xl border border-white/10 shadow-[var(--shadow-glow-sm)]">
+          <a
+            href="https://share.google/MyyTZzOnfdb2UT6gP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative block w-full overflow-hidden rounded-2xl border border-white/10 shadow-[var(--shadow-glow-sm)] transition-all hover:border-primary/50"
+          >
+            <div className="absolute inset-0 z-10 flex items-center justify-center bg-transparent transition-colors group-hover:bg-black/20">
+              <span className="flex items-center gap-2 rounded-full bg-background/90 px-5 py-2.5 font-semibold text-primary opacity-0 backdrop-blur transition-opacity group-hover:opacity-100">
+                <MapPin className="h-4 w-4" />
+                Open in Google Maps
+              </span>
+            </div>
             <iframe
               src="https://www.google.com/maps?q=02,+Desh+Bandhu+Gupta+Road,+Motia+Khan,+Paharganj,+New+Delhi,+Delhi+110055&output=embed"
               width="100%"
@@ -27,9 +39,10 @@ export function MapSection() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Just 2 Fit Gym Location"
+              className="pointer-events-none"
             ></iframe>
             {/* CSS Filter hack makes Google Maps dark mode to match the theme */}
-          </div>
+          </a>
         </FadeUp>
       </div>
     </section>
