@@ -14,28 +14,42 @@ const REVIEWS = [
 
 export function ReviewsSection() {
   return (
-    <section id="reviews" className="relative border-t border-white/5 bg-transparent py-12 sm:py-32">
+    <section
+      id="reviews"
+      className="relative border-t border-white/5 bg-transparent py-12 sm:py-32"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <div className="flex flex-col items-start gap-5 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">Reviews</p>
+              <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+                Reviews
+              </p>
               <h2 className="mt-2 sm:mt-3 max-w-2xl font-display text-3xl leading-none sm:text-6xl">
                 Loved by members across Paharganj.
               </h2>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl border border-primary/30 bg-primary/5 px-4 py-3 sm:px-5 sm:py-4">
               <div>
-                <div className="font-display text-3xl sm:text-4xl text-primary text-glow">5.0</div>
-                <div className="text-[10px] sm:text-xs uppercase tracking-wider text-muted-foreground">Google</div>
+                <div className="font-display text-3xl sm:text-4xl text-primary text-glow">
+                  5.0
+                </div>
+                <div className="text-[10px] sm:text-xs uppercase tracking-wider text-muted-foreground">
+                  Google
+                </div>
               </div>
               <div>
                 <div className="flex gap-0.5 sm:gap-1 text-primary">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-3.5 w-3.5 sm:h-4 sm:w-4 fill-primary" />
+                    <Star
+                      key={i}
+                      className="h-3.5 w-3.5 sm:h-4 sm:w-4 fill-primary"
+                    />
                   ))}
                 </div>
-                <div className="mt-0.5 sm:mt-1 text-[10px] sm:text-xs text-muted-foreground">61 verified reviews</div>
+                <div className="mt-0.5 sm:mt-1 text-[10px] sm:text-xs text-muted-foreground">
+                  61 verified reviews
+                </div>
               </div>
             </div>
           </div>
@@ -50,10 +64,15 @@ export function ReviewsSection() {
                   "{r.body}"
                 </blockquote>
                 <figcaption className="mt-4 sm:mt-5 flex items-center justify-between border-t border-white/5 pt-3 sm:pt-4">
-                  <span className="text-sm sm:text-base font-semibold">{r.name}</span>
+                  <span className="text-sm sm:text-base font-semibold">
+                    {r.name}
+                  </span>
                   <span className="flex gap-0.5 text-primary">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} className="h-2.5 w-2.5 sm:h-3 sm:w-3 fill-primary" />
+                      <Star
+                        key={i}
+                        className="h-2.5 w-2.5 sm:h-3 sm:w-3 fill-primary"
+                      />
                     ))}
                   </span>
                 </figcaption>

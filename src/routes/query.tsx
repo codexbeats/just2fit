@@ -12,7 +12,8 @@ export const Route = createFileRoute("/query")({
       { title: "Query & Goals — JUST 2 FIT GYM" },
       {
         name: "description",
-        content: "Tell us about your fitness goals and start your journey with JUST 2 FIT GYM.",
+        content:
+          "Tell us about your fitness goals and start your journey with JUST 2 FIT GYM.",
       },
     ],
   }),
@@ -28,7 +29,9 @@ function QueryPage() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -36,10 +39,10 @@ function QueryPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    
+
     setIsSubmitting(false);
     toast.success("Query submitted successfully!", {
       description: "Our team will contact you shortly.",
@@ -50,7 +53,7 @@ function QueryPage() {
   return (
     <div className="min-h-screen bg-transparent text-foreground flex flex-col">
       <SiteHeader />
-      
+
       <main className="flex-1 flex items-center justify-center pt-24 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 z-0">
@@ -65,7 +68,8 @@ function QueryPage() {
                 Start Your Journey
               </h1>
               <p className="mt-4 text-lg text-muted-foreground">
-                Tell us about your fitness goals and let us help you achieve them.
+                Tell us about your fitness goals and let us help you achieve
+                them.
               </p>
             </div>
           </FadeUp>
@@ -73,12 +77,15 @@ function QueryPage() {
           <FadeUp delay={0.1}>
             <div className="bg-surface/80 border border-white/10 rounded-2xl p-6 sm:p-10 shadow-xl  relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-4">
                   {/* Name Input */}
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-1.5">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-muted-foreground mb-1.5"
+                    >
                       Full Name *
                     </label>
                     <div className="relative">
@@ -101,7 +108,10 @@ function QueryPage() {
                   {/* Phone & Email Inputs Row */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-muted-foreground mb-1.5">
+                      <label
+                        htmlFor="phone"
+                        className="block text-sm font-medium text-muted-foreground mb-1.5"
+                      >
                         Phone Number *
                       </label>
                       <div className="relative">
@@ -122,7 +132,10 @@ function QueryPage() {
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-1.5">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-muted-foreground mb-1.5"
+                      >
                         Email Address
                       </label>
                       <div className="relative">
@@ -144,7 +157,10 @@ function QueryPage() {
 
                   {/* Message/Goals Textarea */}
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-muted-foreground mb-1.5">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-muted-foreground mb-1.5"
+                    >
                       Your Goals / Message *
                     </label>
                     <div className="relative">

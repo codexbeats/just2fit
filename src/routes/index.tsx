@@ -8,13 +8,19 @@ import { SiteFooter } from "@/components/site-footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "JUST 2 FIT GYM — Premier Fitness Center in Paharganj, New Delhi" },
+      {
+        title:
+          "JUST 2 FIT GYM — Premier Fitness Center in Paharganj, New Delhi",
+      },
       {
         name: "description",
         content:
           "Paharganj's premier fitness destination. 5.0★ on Google. 3,000 sq. feet open rooftop CrossFit arena, elite equipment, certified trainers. 02, Desh Bandhu Gupta Road.",
       },
-      { property: "og:title", content: "JUST 2 FIT GYM — Premier Fitness Center in Paharganj" },
+      {
+        property: "og:title",
+        content: "JUST 2 FIT GYM — Premier Fitness Center in Paharganj",
+      },
       {
         property: "og:description",
         content:

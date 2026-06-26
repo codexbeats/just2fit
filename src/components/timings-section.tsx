@@ -18,15 +18,21 @@ const SHIFTS = [
 
 export function TimingsSection() {
   return (
-    <section id="timings" className="relative border-t border-white/5 bg-transparent py-10 sm:py-20 lg:py-32">
+    <section
+      id="timings"
+      className="relative border-t border-white/5 bg-transparent py-10 sm:py-20 lg:py-32"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeUp>
-          <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">Plan Your Visit</p>
+          <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+            Plan Your Visit
+          </p>
           <h2 className="mt-2 sm:mt-3 max-w-2xl font-display text-2xl leading-none sm:text-5xl lg:text-6xl">
             Working Hours
           </h2>
           <p className="mt-3 sm:mt-4 max-w-xl text-sm sm:text-base text-muted-foreground">
-            Two daily shifts so early risers and after-work warriors can both get their reps in.
+            Two daily shifts so early risers and after-work warriors can both
+            get their reps in.
           </p>
         </FadeUp>
 
@@ -42,7 +48,9 @@ export function TimingsSection() {
                 <div className="mt-4 sm:mt-5 text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                   {s.days}
                 </div>
-                <div className="mt-1 sm:mt-2 font-display text-xl sm:text-2xl lg:text-3xl tracking-wide">{s.label}</div>
+                <div className="mt-1 sm:mt-2 font-display text-xl sm:text-2xl lg:text-3xl tracking-wide">
+                  {s.label}
+                </div>
                 <div className="mt-2 sm:mt-4 font-display text-2xl text-primary sm:text-3xl lg:text-4xl">
                   {s.time}
                 </div>

@@ -28,12 +28,16 @@ const LOVE_REASONS = [
 
 export function BenefitsSection() {
   return (
-    <section id="benefits" className="relative border-t border-white/5 bg-transparent py-10 sm:py-20 lg:py-32">
+    <section
+      id="benefits"
+      className="relative border-t border-white/5 bg-transparent py-10 sm:py-20 lg:py-32"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:gap-16 lg:grid-cols-2 lg:gap-24">
-          
           <FadeUp>
-            <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">Benefits</p>
+            <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+              Benefits
+            </p>
             <h2 className="mt-2 sm:mt-3 font-display text-2xl leading-none sm:text-4xl lg:text-5xl">
               Membership Benefits
             </h2>
@@ -44,14 +48,18 @@ export function BenefitsSection() {
               {BENEFITS.map((benefit, i) => (
                 <li key={i} className="flex items-start gap-2 sm:gap-3">
                   <CheckCircle2 className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-primary" />
-                  <span className="text-sm sm:text-base text-foreground">{benefit}</span>
+                  <span className="text-sm sm:text-base text-foreground">
+                    {benefit}
+                  </span>
                 </li>
               ))}
             </ul>
           </FadeUp>
 
           <FadeUp delay={0.1}>
-            <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">Community</p>
+            <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+              Community
+            </p>
             <h2 className="mt-2 sm:mt-3 font-display text-2xl leading-none sm:text-4xl lg:text-5xl">
               Why Members Love Us
             </h2>
@@ -62,12 +70,13 @@ export function BenefitsSection() {
               {LOVE_REASONS.map((reason, i) => (
                 <li key={i} className="flex items-start gap-2 sm:gap-3">
                   <CheckCircle2 className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-primary" />
-                  <span className="text-sm sm:text-base text-foreground">{reason}</span>
+                  <span className="text-sm sm:text-base text-foreground">
+                    {reason}
+                  </span>
                 </li>
               ))}
             </ul>
           </FadeUp>
-
         </div>
       </div>
     </section>

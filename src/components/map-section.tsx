@@ -3,16 +3,22 @@ import { FadeUp } from "./fade-up";
 
 export function MapSection() {
   return (
-    <section id="location" className="relative border-t border-white/5 bg-transparent py-12 sm:py-32">
+    <section
+      id="location"
+      className="relative border-t border-white/5 bg-transparent py-12 sm:py-32"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <div className="mb-8 sm:mb-10 text-center">
-            <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">Location</p>
+            <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+              Location
+            </p>
             <h2 className="mt-2 sm:mt-3 font-display text-3xl leading-none sm:text-6xl">
               Find Us Here
             </h2>
             <p className="mt-3 sm:mt-4 text-sm sm:text-base text-muted-foreground px-2">
-              02, Desh Bandhu Gupta Road, In front of the Police Station, Motia Khan, Paharganj, New Delhi 110055
+              02, Desh Bandhu Gupta Road, In front of the Police Station, Motia
+              Khan, Paharganj, New Delhi 110055
             </p>
           </div>
         </FadeUp>
@@ -33,7 +39,11 @@ export function MapSection() {
             <iframe
               src="https://www.google.com/maps?q=02,+Desh+Bandhu+Gupta+Road,+Motia+Khan,+Paharganj,+New+Delhi,+Delhi+110055&output=embed"
               width="100%"
-              style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(85%) contrast(85%)" }}
+              style={{
+                border: 0,
+                filter:
+                  "invert(90%) hue-rotate(180deg) brightness(85%) contrast(85%)",
+              }}
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

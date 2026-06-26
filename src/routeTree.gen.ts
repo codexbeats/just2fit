@@ -8,97 +8,97 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from './routes/__root'
-import { Route as QueryRouteImport } from './routes/query'
-import { Route as FacilitiesRouteImport } from './routes/facilities'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as IndexRouteImport } from './routes/index'
+import { Route as rootRouteImport } from "./routes/__root";
+import { Route as QueryRouteImport } from "./routes/query";
+import { Route as FacilitiesRouteImport } from "./routes/facilities";
+import { Route as ContactRouteImport } from "./routes/contact";
+import { Route as IndexRouteImport } from "./routes/index";
 
 const QueryRoute = QueryRouteImport.update({
-  id: '/query',
-  path: '/query',
+  id: "/query",
+  path: "/query",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const FacilitiesRoute = FacilitiesRouteImport.update({
-  id: '/facilities',
-  path: '/facilities',
+  id: "/facilities",
+  path: "/facilities",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+  id: "/contact",
+  path: "/contact",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/contact': typeof ContactRoute
-  '/facilities': typeof FacilitiesRoute
-  '/query': typeof QueryRoute
+  "/": typeof IndexRoute;
+  "/contact": typeof ContactRoute;
+  "/facilities": typeof FacilitiesRoute;
+  "/query": typeof QueryRoute;
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/contact': typeof ContactRoute
-  '/facilities': typeof FacilitiesRoute
-  '/query': typeof QueryRoute
+  "/": typeof IndexRoute;
+  "/contact": typeof ContactRoute;
+  "/facilities": typeof FacilitiesRoute;
+  "/query": typeof QueryRoute;
 }
 export interface FileRoutesById {
-  __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/contact': typeof ContactRoute
-  '/facilities': typeof FacilitiesRoute
-  '/query': typeof QueryRoute
+  __root__: typeof rootRouteImport;
+  "/": typeof IndexRoute;
+  "/contact": typeof ContactRoute;
+  "/facilities": typeof FacilitiesRoute;
+  "/query": typeof QueryRoute;
 }
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/facilities' | '/query'
-  fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/facilities' | '/query'
-  id: '__root__' | '/' | '/contact' | '/facilities' | '/query'
-  fileRoutesById: FileRoutesById
+  fileRoutesByFullPath: FileRoutesByFullPath;
+  fullPaths: "/" | "/contact" | "/facilities" | "/query";
+  fileRoutesByTo: FileRoutesByTo;
+  to: "/" | "/contact" | "/facilities" | "/query";
+  id: "__root__" | "/" | "/contact" | "/facilities" | "/query";
+  fileRoutesById: FileRoutesById;
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  ContactRoute: typeof ContactRoute
-  FacilitiesRoute: typeof FacilitiesRoute
-  QueryRoute: typeof QueryRoute
+  IndexRoute: typeof IndexRoute;
+  ContactRoute: typeof ContactRoute;
+  FacilitiesRoute: typeof FacilitiesRoute;
+  QueryRoute: typeof QueryRoute;
 }
 
-declare module '@tanstack/react-router' {
+declare module "@tanstack/react-router" {
   interface FileRoutesByPath {
-    '/query': {
-      id: '/query'
-      path: '/query'
-      fullPath: '/query'
-      preLoaderRoute: typeof QueryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/facilities': {
-      id: '/facilities'
-      path: '/facilities'
-      fullPath: '/facilities'
-      preLoaderRoute: typeof FacilitiesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
+    "/query": {
+      id: "/query";
+      path: "/query";
+      fullPath: "/query";
+      preLoaderRoute: typeof QueryRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/facilities": {
+      id: "/facilities";
+      path: "/facilities";
+      fullPath: "/facilities";
+      preLoaderRoute: typeof FacilitiesRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/contact": {
+      id: "/contact";
+      path: "/contact";
+      fullPath: "/contact";
+      preLoaderRoute: typeof ContactRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/": {
+      id: "/";
+      path: "/";
+      fullPath: "/";
+      preLoaderRoute: typeof IndexRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
   }
 }
 
@@ -107,17 +107,17 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   FacilitiesRoute: FacilitiesRoute,
   QueryRoute: QueryRoute,
-}
+};
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
-  ._addFileTypes<FileRouteTypes>()
+  ._addFileTypes<FileRouteTypes>();
 
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
+import type { getRouter } from "./router.tsx";
+import type { startInstance } from "./start.ts";
+declare module "@tanstack/react-start" {
   interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+    ssr: true;
+    router: Awaited<ReturnType<typeof getRouter>>;
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>;
   }
 }

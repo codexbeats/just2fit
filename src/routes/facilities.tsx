@@ -10,7 +10,8 @@ export const Route = createFileRoute("/facilities")({
       { title: "Facilities & Amenities — JUST 2 FIT GYM" },
       {
         name: "description",
-        content: "Explore the premium facilities, elite equipment, and massive rooftop CrossFit arena at JUST 2 FIT GYM.",
+        content:
+          "Explore the premium facilities, elite equipment, and massive rooftop CrossFit arena at JUST 2 FIT GYM.",
       },
     ],
   }),

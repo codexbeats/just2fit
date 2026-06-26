@@ -10,7 +10,8 @@ export const Route = createFileRoute("/contact")({
       { title: "Contact & Info — JUST 2 FIT GYM" },
       {
         name: "description",
-        content: "Find our working hours and get directions to JUST 2 FIT GYM in Paharganj.",
+        content:
+          "Find our working hours and get directions to JUST 2 FIT GYM in Paharganj.",
       },
     ],
   }),

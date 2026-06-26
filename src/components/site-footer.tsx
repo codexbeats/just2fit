@@ -1,16 +1,29 @@
-import { Phone, MapPin, Navigation, Instagram, Facebook, MessageCircle } from "lucide-react";
+import {
+  Phone,
+  MapPin,
+  Navigation,
+  Instagram,
+  Facebook,
+  MessageCircle,
+} from "lucide-react";
 import { FadeUp } from "./fade-up";
 import { Logo } from "./logo";
 
-const ADDRESS = "02, Desh Bandhu Gupta Road, Motia Khan, Paharganj, New Delhi, Delhi 110055";
+const ADDRESS =
+  "02, Desh Bandhu Gupta Road, Motia Khan, Paharganj, New Delhi, Delhi 110055";
 const MAPS_URL = "https://share.google/MyyTZzOnfdb2UT6gP";
 
 export function SiteFooter() {
   return (
-    <footer id="contact" className="relative border-t border-white/5 bg-transparent ">
+    <footer
+      id="contact"
+      className="relative border-t border-white/5 bg-transparent "
+    >
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
         <FadeUp>
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Visit Us</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+            Visit Us
+          </p>
           <h2 className="mt-3 max-w-3xl font-display text-4xl leading-none sm:text-6xl">
             Step inside. Start lifting.
           </h2>
@@ -27,7 +40,9 @@ export function SiteFooter() {
                   <Phone className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Call us</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">
+                    Call us
+                  </div>
                   <div className="mt-1 break-all font-display text-2xl tracking-wide text-primary sm:text-3xl">
                     +91 99903 18990
                   </div>
@@ -39,8 +54,12 @@ export function SiteFooter() {
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Address</div>
-                  <div className="mt-1 text-base leading-relaxed">{ADDRESS}</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">
+                    Address
+                  </div>
+                  <div className="mt-1 text-base leading-relaxed">
+                    {ADDRESS}
+                  </div>
                 </div>
               </div>
             </div>
@@ -51,7 +70,8 @@ export function SiteFooter() {
               <div>
                 <h3 className="font-display text-3xl tracking-wide">Find Us</h3>
                 <p className="mt-2 text-muted-foreground">
-                  We're located opposite the Paharganj Police Station. Tap below for turn-by-turn directions.
+                  We're located opposite the Paharganj Police Station. Tap below
+                  for turn-by-turn directions.
                 </p>
               </div>
 
@@ -66,10 +86,16 @@ export function SiteFooter() {
               </a>
 
               <div className="mt-auto pt-4">
-                <div className="text-xs uppercase tracking-widest text-muted-foreground">Follow</div>
+                <div className="text-xs uppercase tracking-widest text-muted-foreground">
+                  Follow
+                </div>
                 <div className="mt-3 flex gap-3">
                   {[
-                    { Icon: Instagram, href: "https://instagram.com/just2fit_by_ashwin", label: "Instagram" },
+                    {
+                      Icon: Instagram,
+                      href: "https://instagram.com/just2fit_by_ashwin",
+                      label: "Instagram",
+                    },
                     { Icon: Facebook, href: "#", label: "Facebook" },
                     {
                       Icon: MessageCircle,

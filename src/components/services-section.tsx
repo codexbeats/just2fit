@@ -1,4 +1,14 @@
-import { Dumbbell, HeartPulse, UserCog, Scale, Flame, Salad, Activity, Music, Sparkles } from "lucide-react";
+import {
+  Dumbbell,
+  HeartPulse,
+  UserCog,
+  Scale,
+  Flame,
+  Salad,
+  Activity,
+  Music,
+  Sparkles,
+} from "lucide-react";
 import { FadeUp } from "./fade-up";
 import weights from "@/assets/service-weights.jpg";
 import cardio from "@/assets/service-cardio.jpg";
@@ -51,10 +61,15 @@ const SERVICES: Service[] = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="relative border-t border-white/5 bg-transparent py-12 sm:py-24">
+    <section
+      id="services"
+      className="relative border-t border-white/5 bg-transparent py-12 sm:py-24"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeUp>
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Facilities & Amenities</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+            Facilities & Amenities
+          </p>
           <h2 className="mt-3 max-w-3xl font-display text-2xl leading-none sm:text-5xl">
             Designed for Peak Performance
           </h2>
@@ -62,7 +77,11 @@ export function ServicesSection() {
 
         <div className="mt-10 sm:mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[14rem]">
           {SERVICES.map((s, i) => (
-            <FadeUp key={s.title} delay={Math.min(i, 5) * 0.05} className={`h-full ${s.span ?? ""}`}>
+            <FadeUp
+              key={s.title}
+              delay={Math.min(i, 5) * 0.05}
+              className={`h-full ${s.span ?? ""}`}
+            >
               <ServiceCard {...s} />
             </FadeUp>
           ))}
@@ -107,8 +126,12 @@ function ServiceCard({ title, body, icon: Icon, image }: Service) {
 
       <div className="relative flex flex-col" style={{ zIndex: 2 }}>
         <Icon className="mb-4 h-7 w-7 text-primary transition-transform group-hover:scale-110" />
-        <h3 className="font-display text-xl tracking-wide sm:text-2xl">{title}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
+        <h3 className="font-display text-xl tracking-wide sm:text-2xl">
+          {title}
+        </h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          {body}
+        </p>
       </div>
     </article>
   );
