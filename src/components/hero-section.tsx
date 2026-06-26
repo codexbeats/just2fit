@@ -52,11 +52,12 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-display flex flex-wrap items-baseline justify-start uppercase tracking-tighter transform -skew-x-12 mb-2 sm:mb-4"
+          className="font-display flex flex-wrap items-baseline justify-start uppercase tracking-tighter gap-x-3 sm:gap-x-5 mb-4 sm:mb-6"
         >
-          <span className="text-primary font-black text-4xl sm:text-6xl md:text-8xl lg:text-[8rem] drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]" style={{ WebkitTextStroke: '1px rgba(255,215,0,0.3)' }}>JUST</span>
-          <span className="text-white font-black text-5xl sm:text-7xl md:text-[7rem] lg:text-[9rem] mx-2 sm:mx-5 drop-shadow-[0_0_20px_rgba(255,255,255,0.5)]" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>2</span>
-          <span className="text-[#FF0000] font-black text-4xl sm:text-6xl md:text-8xl lg:text-[8rem] drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]" style={{ WebkitTextStroke: '1px rgba(255,0,0,0.5)' }}>FIT</span>
+          <span className="text-primary text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-glow drop-shadow-[0_0_15px_rgba(255,215,0,0.5)]">JUST</span>
+          <span className="text-white text-7xl sm:text-8xl md:text-9xl lg:text-[9rem] drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]">2</span>
+          <span className="text-[#FF0000] text-6xl sm:text-7xl md:text-8xl lg:text-9xl drop-shadow-[0_0_15px_rgba(255,0,0,0.6)]">FIT</span>
+          <span className="text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl ml-1 sm:ml-2 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">GYM</span>
         </motion.h1>
 
         <motion.div
